@@ -1,0 +1,81 @@
+
+body {
+  background-color:rgba(213,225,239,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Make the wrapper cover the full height of the body */
+}
+
+.container {
+  background-color: white;
+  max-width: 320px;
+  max-height: 497px;
+  margin: auto;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code {
+  max-width: 288px; /* Set the width of the container to the desired image width + padding */
+  max-height: 288px; /* Set the height to match the width to create a square container */
+  padding: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image fill the container while maintaining its aspect ratio */
+  border-radius: 16px;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 288px;
+  max-height: 129px;
+  text-align: center;
+  font-family:'Outfit', sans-serif;
+  padding-bottom: 36px;
+}
+
+#bold {
+  color:  hsl(218, 44%, 22%);
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+#light {
+  color: #979797;
+  font-weight: 400;
+  margin-top: 8px;
+  padding-bottom: 20px;
+}
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+  }
+
+  @media (max-height: 497px) {
+    .container {
+      max-height: 100vh;
+    }
+  }
